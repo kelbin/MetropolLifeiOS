@@ -36,7 +36,7 @@
 				</dict>
 			</dict>
 			<key>INIntentName</key>
-			<string>Intent</string>
+			<string>OrderReception</string>
 			<key>INIntentParameterCombinations</key>
 			<dict>
 				<key></key>
@@ -64,7 +64,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>order</string>
+			<string>doSomething</string>
 			<key>INIntentTitleID</key>
 			<string>mGK2oI</string>
 			<key>INIntentType</key>

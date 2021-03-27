@@ -37,7 +37,7 @@
 		2CD71A27260FA75800B2616C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A26260FA75800B2616C /* MainViewController.swift */; };
 		2CD71A2A260FA79000B2616C /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */; };
 		2CD71A2C260FA79D00B2616C /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */; };
-		2CD71A2F260FCABC00B2616C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */; };
+		2CD71A2F260FCABC00B2616C /* OrderReception.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */; };
 		789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,7 @@
 		2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetropolLifeiOS.entitlements; sourceTree = "<group>"; };
-		2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderReception.intentdefinition; sourceTree = "<group>"; };
 		51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolLifeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.debug.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.release.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				2CD719E0260F307200B2616C /* LaunchScreen.storyboard */,
 				2CD719E3260F307200B2616C /* Info.plist */,
 				2CD71A1C260F4BAB00B2616C /* sample4.m4a */,
-				2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */,
+				2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */,
 			);
 			path = MetropolLifeiOS;
 			sourceTree = "<group>";
@@ -411,7 +411,7 @@
 				2CD71A0F260F43E100B2616C /* MockMessage.swift in Sources */,
 				2CD719F9260F426500B2616C /* MessageInputBarDelegate.swift in Sources */,
 				2CD71A05260F435B00B2616C /* UserItem.swift in Sources */,
-				2CD71A2F260FCABC00B2616C /* Intents.intentdefinition in Sources */,
+				2CD71A2F260FCABC00B2616C /* OrderReception.intentdefinition in Sources */,
 				2CD719FD260F42B100B2616C /* MessageLayoutDelegate.swift in Sources */,
 				2CD719F3260F41F300B2616C /* Configure+ChatViewController.swift in Sources */,
 				2CD719FB260F429800B2616C /* MessageDisplayDelegate.swift in Sources */,

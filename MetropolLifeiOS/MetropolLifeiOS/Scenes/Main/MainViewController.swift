@@ -9,6 +9,7 @@
 import UIKit
 import AdvancedPageControl
 import IntentsUI
+import Intents
 
 struct MainCategoriesModel {
     let text: String
@@ -64,17 +65,20 @@ final class MainViewController: UIViewController {
         let alert = UIAlertController(title: "Done!", message: "This is your first shortcut action!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        
     }
 
 }
 
 extension MainViewController {
+    
     @available(iOS 12.0, *)
-    public var intent: DoSomethingIntent {
-        let testIntent = DoSomethingIntent()
+    public var intent: OrderReceptionIntent {
+        let testIntent = OrderReceptionIntent()
         testIntent.suggestedInvocationPhrase = "Test command"
         return testIntent
     }
+    
 }
 
 extension MainViewController: INUIAddVoiceShortcutButtonDelegate {

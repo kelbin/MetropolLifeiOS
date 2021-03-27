@@ -22,7 +22,7 @@
 	<true/>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>IntentIntent</string>
+		<string>OrderReceptionIntent</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
