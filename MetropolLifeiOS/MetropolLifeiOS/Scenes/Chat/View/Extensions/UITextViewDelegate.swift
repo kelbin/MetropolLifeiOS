@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import UIKit
+
+extension ChatViewController: UITextViewDelegate {
+    
+    public override func becomeFirstResponder() -> Bool {
+        super.becomeFirstResponder()
+        
+        messageInputBar.inputTextView.placeholder = Constants.placeholder
+        
+        return true
+    }
+    
+    public override func resignFirstResponder() -> Bool {
+        super.resignFirstResponder()
+        
+        messageInputBar.inputTextView.placeholder = nil
+        
+        return true
+    }
+}

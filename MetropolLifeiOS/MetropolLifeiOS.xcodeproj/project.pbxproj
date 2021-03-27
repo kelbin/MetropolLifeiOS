@@ -3,27 +3,82 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2CD719D6260F307000B2616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719D5260F307000B2616C /* AppDelegate.swift */; };
-		2CD719D8260F307000B2616C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719D7260F307000B2616C /* SceneDelegate.swift */; };
-		2CD719DA260F307000B2616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719D9260F307000B2616C /* ViewController.swift */; };
 		2CD719DD260F307000B2616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD719DB260F307000B2616C /* Main.storyboard */; };
 		2CD719DF260F307200B2616C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD719DE260F307200B2616C /* Assets.xcassets */; };
 		2CD719E2260F307200B2616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD719E0260F307200B2616C /* LaunchScreen.storyboard */; };
+		2CD719EC260F404700B2616C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719EB260F404700B2616C /* ChatViewController.swift */; };
+		2CD719F3260F41F300B2616C /* Configure+ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719F2260F41F300B2616C /* Configure+ChatViewController.swift */; };
+		2CD719F5260F421E00B2616C /* Helpers+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719F4260F421E00B2616C /* Helpers+Chat.swift */; };
+		2CD719F7260F423B00B2616C /* MessageDataSource+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719F6260F423B00B2616C /* MessageDataSource+Chat.swift */; };
+		2CD719F9260F426500B2616C /* MessageInputBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719F8260F426500B2616C /* MessageInputBarDelegate.swift */; };
+		2CD719FB260F429800B2616C /* MessageDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719FA260F429800B2616C /* MessageDisplayDelegate.swift */; };
+		2CD719FD260F42B100B2616C /* MessageLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719FC260F42B100B2616C /* MessageLayoutDelegate.swift */; };
+		2CD719FF260F42CF00B2616C /* UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD719FE260F42CF00B2616C /* UITextViewDelegate.swift */; };
+		2CD71A01260F42F600B2616C /* BaseMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A00260F42F600B2616C /* BaseMessageCell.swift */; };
+		2CD71A03260F433800B2616C /* HeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A02260F433800B2616C /* HeaderReusableView.swift */; };
+		2CD71A05260F435B00B2616C /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A04260F435B00B2616C /* UserItem.swift */; };
+		2CD71A07260F438300B2616C /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A06260F438300B2616C /* AudioController.swift */; };
+		2CD71A0F260F43E100B2616C /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A0E260F43E100B2616C /* MockMessage.swift */; };
+		2CD71A11260F43F900B2616C /* MockSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A10260F43F900B2616C /* MockSocket.swift */; };
+		2CD71A13260F441D00B2616C /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A12260F441D00B2616C /* MockUser.swift */; };
+		2CD71A15260F445000B2616C /* Settings+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A14260F445000B2616C /* Settings+UserDefaults.swift */; };
+		2CD71A17260F447100B2616C /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A16260F447100B2616C /* Lorem.swift */; };
+		2CD71A19260F448B00B2616C /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A18260F448B00B2616C /* SampleData.swift */; };
+		2CD71A1B260F478400B2616C /* Ext+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A1A260F478400B2616C /* Ext+Date.swift */; };
+		2CD71A1D260F4BB600B2616C /* sample4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2CD71A1C260F4BAB00B2616C /* sample4.m4a */; };
+		2CD71A20260F60ED00B2616C /* StarscreamSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A1F260F60ED00B2616C /* StarscreamSocket.swift */; };
+		2CD71A23260F8DB700B2616C /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD71A21260F8DB700B2616C /* IntentsUI.framework */; };
+		2CD71A24260F8DB700B2616C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD71A22260F8DB700B2616C /* Intents.framework */; };
+		2CD71A27260FA75800B2616C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A26260FA75800B2616C /* MainViewController.swift */; };
+		2CD71A2A260FA79000B2616C /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */; };
+		2CD71A2C260FA79D00B2616C /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */; };
+		2CD71A2F260FCABC00B2616C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */; };
+		789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CD719D2260F307000B2616C /* MetropolLifeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetropolLifeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD719D5260F307000B2616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CD719D7260F307000B2616C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2CD719D9260F307000B2616C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CD719DC260F307000B2616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CD719DE260F307200B2616C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CD719E1260F307200B2616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CD719E3260F307200B2616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD719EB260F404700B2616C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2CD719F2260F41F300B2616C /* Configure+ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configure+ChatViewController.swift"; sourceTree = "<group>"; };
+		2CD719F4260F421E00B2616C /* Helpers+Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+Chat.swift"; sourceTree = "<group>"; };
+		2CD719F6260F423B00B2616C /* MessageDataSource+Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageDataSource+Chat.swift"; sourceTree = "<group>"; };
+		2CD719F8260F426500B2616C /* MessageInputBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputBarDelegate.swift; sourceTree = "<group>"; };
+		2CD719FA260F429800B2616C /* MessageDisplayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDisplayDelegate.swift; sourceTree = "<group>"; };
+		2CD719FC260F42B100B2616C /* MessageLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLayoutDelegate.swift; sourceTree = "<group>"; };
+		2CD719FE260F42CF00B2616C /* UITextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewDelegate.swift; sourceTree = "<group>"; };
+		2CD71A00260F42F600B2616C /* BaseMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMessageCell.swift; sourceTree = "<group>"; };
+		2CD71A02260F433800B2616C /* HeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderReusableView.swift; sourceTree = "<group>"; };
+		2CD71A04260F435B00B2616C /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		2CD71A06260F438300B2616C /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		2CD71A0E260F43E100B2616C /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
+		2CD71A10260F43F900B2616C /* MockSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSocket.swift; sourceTree = "<group>"; };
+		2CD71A12260F441D00B2616C /* MockUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
+		2CD71A14260F445000B2616C /* Settings+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+UserDefaults.swift"; sourceTree = "<group>"; };
+		2CD71A16260F447100B2616C /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		2CD71A18260F448B00B2616C /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		2CD71A1A260F478400B2616C /* Ext+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Date.swift"; sourceTree = "<group>"; };
+		2CD71A1C260F4BAB00B2616C /* sample4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample4.m4a; sourceTree = "<group>"; };
+		2CD71A1F260F60ED00B2616C /* StarscreamSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamSocket.swift; sourceTree = "<group>"; };
+		2CD71A21260F8DB700B2616C /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		2CD71A22260F8DB700B2616C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		2CD71A26260FA75800B2616C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetropolLifeiOS.entitlements; sourceTree = "<group>"; };
+		2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolLifeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.debug.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.release.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +86,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD71A24260F8DB700B2616C /* Intents.framework in Frameworks */,
+				2CD71A23260F8DB700B2616C /* IntentsUI.framework in Frameworks */,
+				789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270E7FCAEFFCED3A4B1E9733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */,
+				C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2CD719C9260F307000B2616C = {
 			isa = PBXGroup;
 			children = (
 				2CD719D4260F307000B2616C /* MetropolLifeiOS */,
 				2CD719D3260F307000B2616C /* Products */,
+				270E7FCAEFFCED3A4B1E9733 /* Pods */,
+				8210C719326A2C70AEAE9AB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +125,161 @@
 		2CD719D4260F307000B2616C /* MetropolLifeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */,
+				2CD719E9260F3F6F00B2616C /* Scenes */,
 				2CD719D5260F307000B2616C /* AppDelegate.swift */,
-				2CD719D7260F307000B2616C /* SceneDelegate.swift */,
-				2CD719D9260F307000B2616C /* ViewController.swift */,
 				2CD719DB260F307000B2616C /* Main.storyboard */,
 				2CD719DE260F307200B2616C /* Assets.xcassets */,
 				2CD719E0260F307200B2616C /* LaunchScreen.storyboard */,
 				2CD719E3260F307200B2616C /* Info.plist */,
+				2CD71A1C260F4BAB00B2616C /* sample4.m4a */,
+				2CD71A2E260FCABC00B2616C /* Intents.intentdefinition */,
 			);
 			path = MetropolLifeiOS;
+			sourceTree = "<group>";
+		};
+		2CD719E9260F3F6F00B2616C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A25260FA73F00B2616C /* Main */,
+				2CD719EA260F3F7F00B2616C /* Chat */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2CD719EA260F3F7F00B2616C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A1E260F60DA00B2616C /* Socket */,
+				2CD719EF260F41B200B2616C /* View */,
+				2CD719EE260F41A400B2616C /* Models */,
+				2CD719ED260F419800B2616C /* Helpers */,
+				2CD71A1A260F478400B2616C /* Ext+Date.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2CD719ED260F419800B2616C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A08260F43AE00B2616C /* Mock */,
+				2CD71A06260F438300B2616C /* AudioController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CD719EE260F41A400B2616C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A04260F435B00B2616C /* UserItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CD719EF260F41B200B2616C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CD719F1260F41BF00B2616C /* Extensions */,
+				2CD719F0260F41BA00B2616C /* Cells */,
+				2CD719EB260F404700B2616C /* ChatViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CD719F0260F41BA00B2616C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A00260F42F600B2616C /* BaseMessageCell.swift */,
+				2CD71A02260F433800B2616C /* HeaderReusableView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CD719F1260F41BF00B2616C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CD719F2260F41F300B2616C /* Configure+ChatViewController.swift */,
+				2CD719F4260F421E00B2616C /* Helpers+Chat.swift */,
+				2CD719F6260F423B00B2616C /* MessageDataSource+Chat.swift */,
+				2CD719F8260F426500B2616C /* MessageInputBarDelegate.swift */,
+				2CD719FA260F429800B2616C /* MessageDisplayDelegate.swift */,
+				2CD719FC260F42B100B2616C /* MessageLayoutDelegate.swift */,
+				2CD719FE260F42CF00B2616C /* UITextViewDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CD71A08260F43AE00B2616C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A0D260F43D200B2616C /* Models */,
+				2CD71A0C260F43CB00B2616C /* Extensions */,
+				2CD71A09260F43B200B2616C /* DataGenerator */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		2CD71A09260F43B200B2616C /* DataGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A16260F447100B2616C /* Lorem.swift */,
+				2CD71A18260F448B00B2616C /* SampleData.swift */,
+			);
+			path = DataGenerator;
+			sourceTree = "<group>";
+		};
+		2CD71A0C260F43CB00B2616C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A14260F445000B2616C /* Settings+UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CD71A0D260F43D200B2616C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A0E260F43E100B2616C /* MockMessage.swift */,
+				2CD71A10260F43F900B2616C /* MockSocket.swift */,
+				2CD71A12260F441D00B2616C /* MockUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CD71A1E260F60DA00B2616C /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A1F260F60ED00B2616C /* StarscreamSocket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		2CD71A25260FA73F00B2616C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A28260FA77500B2616C /* Cells */,
+				2CD71A26260FA75800B2616C /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2CD71A28260FA77500B2616C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */,
+				2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8210C719326A2C70AEAE9AB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD71A22260F8DB700B2616C /* Intents.framework */,
+				2CD71A21260F8DB700B2616C /* IntentsUI.framework */,
+				51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD719E6260F307200B2616C /* Build configuration list for PBXNativeTarget "MetropolLifeiOS" */;
 			buildPhases = (
+				E462D8F294A69B45646F6240 /* [CP] Check Pods Manifest.lock */,
 				2CD719CE260F307000B2616C /* Sources */,
 				2CD719CF260F307000B2616C /* Frameworks */,
 				2CD719D0260F307000B2616C /* Resources */,
+				41FFC1A997DCD0B59B744353 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD719E2260F307200B2616C /* LaunchScreen.storyboard in Resources */,
+				2CD71A1D260F4BB600B2616C /* sample4.m4a in Resources */,
 				2CD719DF260F307200B2616C /* Assets.xcassets in Resources */,
 				2CD719DD260F307000B2616C /* Main.storyboard in Resources */,
 			);
@@ -133,14 +351,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41FFC1A997DCD0B59B744353 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E462D8F294A69B45646F6240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetropolLifeiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CD719CE260F307000B2616C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD719DA260F307000B2616C /* ViewController.swift in Sources */,
+				2CD71A1B260F478400B2616C /* Ext+Date.swift in Sources */,
+				2CD71A27260FA75800B2616C /* MainViewController.swift in Sources */,
+				2CD71A07260F438300B2616C /* AudioController.swift in Sources */,
+				2CD719FF260F42CF00B2616C /* UITextViewDelegate.swift in Sources */,
+				2CD71A2C260FA79D00B2616C /* CategoriesCollectionViewCell.swift in Sources */,
+				2CD719F7260F423B00B2616C /* MessageDataSource+Chat.swift in Sources */,
+				2CD71A19260F448B00B2616C /* SampleData.swift in Sources */,
+				2CD71A03260F433800B2616C /* HeaderReusableView.swift in Sources */,
+				2CD71A17260F447100B2616C /* Lorem.swift in Sources */,
+				2CD719F5260F421E00B2616C /* Helpers+Chat.swift in Sources */,
+				2CD71A0F260F43E100B2616C /* MockMessage.swift in Sources */,
+				2CD719F9260F426500B2616C /* MessageInputBarDelegate.swift in Sources */,
+				2CD71A05260F435B00B2616C /* UserItem.swift in Sources */,
+				2CD71A2F260FCABC00B2616C /* Intents.intentdefinition in Sources */,
+				2CD719FD260F42B100B2616C /* MessageLayoutDelegate.swift in Sources */,
+				2CD719F3260F41F300B2616C /* Configure+ChatViewController.swift in Sources */,
+				2CD719FB260F429800B2616C /* MessageDisplayDelegate.swift in Sources */,
+				2CD71A20260F60ED00B2616C /* StarscreamSocket.swift in Sources */,
+				2CD71A2A260FA79000B2616C /* ItemsCollectionViewCell.swift in Sources */,
+				2CD71A13260F441D00B2616C /* MockUser.swift in Sources */,
+				2CD719EC260F404700B2616C /* ChatViewController.swift in Sources */,
+				2CD71A01260F42F600B2616C /* BaseMessageCell.swift in Sources */,
+				2CD71A15260F445000B2616C /* Settings+UserDefaults.swift in Sources */,
+				2CD71A11260F43F900B2616C /* MockSocket.swift in Sources */,
 				2CD719D6260F307000B2616C /* AppDelegate.swift in Sources */,
-				2CD719D8260F307000B2616C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +564,18 @@
 		};
 		2CD719E7260F307200B2616C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MetropolLifeiOS/MetropolLifeiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TP2G3X3LEY;
+				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
 				INFOPLIST_FILE = MetropolLifeiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = brbrb.MetropolLifeiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = bgfb.MetropolLifeiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,16 +584,18 @@
 		};
 		2CD719E8260F307200B2616C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MetropolLifeiOS/MetropolLifeiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TP2G3X3LEY;
+				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
 				INFOPLIST_FILE = MetropolLifeiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = brbrb.MetropolLifeiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = bgfb.MetropolLifeiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

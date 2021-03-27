@@ -15,62 +15,45 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
     
     enum Constants {
         static let maximumHeight: CGFloat = 146
-        static let placeholder = "Сообщение"
+        static let placeholder = "Введите сообщение"
     }
 
     lazy var messageList: [MockMessage] = []
     lazy var audioController = BasicAudioController(messageCollectionView: messagesCollectionView)
-    
-    let model: ChatHistoryModel
-    let senderName: String
-    let stompSocket: StompSocket = StompSocketImp()
-    let chatId: Int
-    
-    init(model: ChatHistoryModel, senderName: String, chatId: Int) {
-        self.model = model
-        self.senderName = senderName
-        self.chatId = chatId
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
 
         configure()
         
-//        HowdiWebsocketService.shared.delegate = self
-//
-//        let url = Core.Network.protocolUrl + Core.Network.baseURL + Core.Network.chatURL + "/websocket"
-//
-//        HowdiWebsocketService.shared.initializeService(url: url)
+        HowdiWebsocketService.shared.delegate = self
         
-        loadFirstMessages(messages: convertModel())
+        loadFirstMessages(messages: [MockMessage(text: "Привет, я чат-бот, помогу тебе с твоими вопросами", user: MockUser(senderId: "260", displayName: "Чат-бот"), messageId: UUID().uuidString, date: Date())])
         
         self.navigationController?.navigationBar.topItem?.title = ""
     }
     
-    private func convertModel() -> [MockMessage] {
-        model.messageList.map({ MockMessage(
-            text: $0.message ?? "",
-            user: $0.senderId == 15 ? SampleData.shared.currentSender : SampleData.shared.child,
-            messageId: String($0.messageId),
-            date: (dateConvert(from: $0.sendingTime ?? 0)))
-            }).reversed()
-    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        MockSocket.shared.connect(with: [SampleData.shared.currentSender, SampleData.shared.child])
-//            .onNewMessage { [weak self] message in
-//                self?.insertMessage(message)
-//        }
+        MockSocket.shared.connect(with: [SampleData.shared.child])
+            .onNewMessage { [weak self] message in
+                self?.insertMessage(message)
+        }
         
-        self.navigationItem.title = senderName
+        let helpText = MockMessage(text: """
+           Для ввода команд используйте следующий текст:
+           1. Вызвать оператора
+           2. Проверить статус брони
+           3. Узнать даты
+           """, user: MockUser(senderId: "260", displayName: "Чат-бот"), messageId: UUID().uuidString, date: Date())
+        
+        insertMessage(helpText)
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationItem.title = "Служба поддержки"
+        self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
     func dateConvert(from time: Int) -> Date {
@@ -89,6 +72,7 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         MockSocket.shared.disconnect()
+        HowdiWebsocketService.shared.disconnect()
         audioController.stopAnyOngoingPlaying()
     }
 
@@ -106,7 +90,12 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
 
         if case .text = message.kind {
             let cell = messagesCollectionView.dequeueReusableCell(BaseMessageCell.self, for: indexPath)
-
+            if isPreviousMessageSameSender(at: indexPath) {
+                cell.displayNameLabel.isHidden = true
+            } else {
+                cell.displayNameLabel.isHidden = false
+            }
+            
             cell.configure(with: message, at: indexPath, and: messagesCollectionView)
 
             return cell
@@ -116,11 +105,11 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
     }
 }
 
-extension ChatViewController: WebsocketServiceDelegate {
+
+extension ChatViewController: HowdiDelegate {
     
-    func didGetJson(with message: String) {
-        let model = MockMessage(text: message, user: SampleData.shared.child, messageId: UUID().uuidString, date: Date())
-        insertMessage(model)
+    func getMessageFrom(_ message: String) {
+        insertMessage(MockMessage(text: message, user: MockUser(senderId: "25", displayName: "Анастасия, администратор"), messageId: UUID().uuidString, date: Date()))
     }
     
 }

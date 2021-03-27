@@ -1,0 +1,35 @@
+PODS:
+  - AdvancedPageControl (0.1.7)
+  - InputBarAccessoryView (5.3.0):
+    - InputBarAccessoryView/Core (= 5.3.0)
+  - InputBarAccessoryView/Core (5.3.0)
+  - MessageKit (3.5.1):
+    - InputBarAccessoryView (~> 5.3.0)
+  - SnapKit (5.0.1)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - AdvancedPageControl
+  - InputBarAccessoryView
+  - MessageKit
+  - SnapKit
+  - Starscream
+
+SPEC REPOS:
+  trunk:
+    - AdvancedPageControl
+    - InputBarAccessoryView
+    - MessageKit
+    - SnapKit
+    - Starscream
+
+SPEC CHECKSUMS:
+  AdvancedPageControl: 018ef7ea2a25864bf8d23f26fb88715bad33d847
+  InputBarAccessoryView: 1638fc3336698eaead9cd83ff2da6c6218fcb6bc
+  MessageKit: 6a15a240a9a4767279de542a8fae861e83d8aedc
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 6480505a155bfc9a62464ab6f0ecc587b8b038af
+
+COCOAPODS: 1.9.1

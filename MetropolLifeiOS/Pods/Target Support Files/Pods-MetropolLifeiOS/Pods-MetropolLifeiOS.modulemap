@@ -1,0 +1,6 @@
+framework module Pods_MetropolLifeiOS {
+  umbrella header "Pods-MetropolLifeiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
