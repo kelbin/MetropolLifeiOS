@@ -38,6 +38,7 @@
 		2CD71A2A260FA79000B2616C /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A29260FA79000B2616C /* ItemsCollectionViewCell.swift */; };
 		2CD71A2C260FA79D00B2616C /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */; };
 		2CD71A2F260FCABC00B2616C /* OrderReception.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */; };
+		481DC186260FDBB20049968E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC185260FDBB20049968E /* ChatListViewController.swift */; };
 		789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetropolLifeiOS.entitlements; sourceTree = "<group>"; };
 		2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderReception.intentdefinition; sourceTree = "<group>"; };
+		481DC185260FDBB20049968E /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolLifeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.debug.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.release.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		2CD719E9260F3F6F00B2616C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				481DC184260FDBA20049968E /* ChatList */,
 				2CD71A25260FA73F00B2616C /* Main */,
 				2CD719EA260F3F7F00B2616C /* Chat */,
 			);
@@ -270,6 +273,14 @@
 				2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		481DC184260FDBA20049968E /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				481DC185260FDBB20049968E /* ChatListViewController.swift */,
+			);
+			path = ChatList;
 			sourceTree = "<group>";
 		};
 		8210C719326A2C70AEAE9AB6 /* Frameworks */ = {
@@ -422,6 +433,7 @@
 				2CD71A01260F42F600B2616C /* BaseMessageCell.swift in Sources */,
 				2CD71A15260F445000B2616C /* Settings+UserDefaults.swift in Sources */,
 				2CD71A11260F43F900B2616C /* MockSocket.swift in Sources */,
+				481DC186260FDBB20049968E /* ChatListViewController.swift in Sources */,
 				2CD719D6260F307000B2616C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
 				INFOPLIST_FILE = MetropolLifeiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
 				INFOPLIST_FILE = MetropolLifeiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

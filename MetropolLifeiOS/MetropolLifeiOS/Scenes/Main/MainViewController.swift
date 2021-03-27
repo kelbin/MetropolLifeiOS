@@ -51,6 +51,7 @@ final class MainViewController: UIViewController {
     func addSiriButton(to view: UIView) {
     if #available(iOS 12.0, *) {
         let button = INUIAddVoiceShortcutButton(style: .whiteOutline)
+            button.isHidden = true
             button.shortcut = INShortcut(intent: intent)
             button.delegate = self
             button.translatesAutoresizingMaskIntoConstraints = false
@@ -62,10 +63,9 @@ final class MainViewController: UIViewController {
     }
     
     func showMessage() {
-        let alert = UIAlertController(title: "Done!", message: "This is your first shortcut action!", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Заявка принята", message: "Ожидайте в течении некоторого времени", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-        
     }
 
 }
@@ -75,7 +75,7 @@ extension MainViewController {
     @available(iOS 12.0, *)
     public var intent: OrderReceptionIntent {
         let testIntent = OrderReceptionIntent()
-        testIntent.suggestedInvocationPhrase = "Test command"
+        testIntent.suggestedInvocationPhrase = "Заказать ресепшен"
         return testIntent
     }
     

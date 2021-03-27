@@ -72,7 +72,9 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         MockSocket.shared.disconnect()
-        HowdiWebsocketService.shared.disconnect()
+        if !MockSocket.shared.isBotConnected {
+            HowdiWebsocketService.shared.disconnect()
+        }
         audioController.stopAnyOngoingPlaying()
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TWH-nT-JWd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jcf-HZ-Mug">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -29,10 +29,26 @@
             </objects>
             <point key="canvasLocation" x="-1658" y="499"/>
         </scene>
+        <!--Места-->
+        <scene sceneID="WSb-Gj-3cs">
+            <objects>
+                <viewController id="gxx-Ms-Vr5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5V9-nO-4DA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yQI-06-xmY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Места" id="Jfs-LW-djT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaS-Ga-BaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-883" y="667"/>
+        </scene>
         <!--Чаты-->
         <scene sceneID="F5R-fi-uPN">
             <objects>
-                <viewController id="EaU-x3-Utm" customClass="ChatViewController" customModule="MetropolLifeiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="EaU-x3-Utm" customClass="ChatViewController" customModule="MetropolLifeiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rQk-pu-AdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,27 +60,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3r-WX-BfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="1197"/>
+            <point key="canvasLocation" x="-93" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--Чаты-->
         <scene sceneID="2Ci-7V-8so">
             <objects>
-                <viewController id="wKi-SN-yaT" sceneMemberID="viewController">
+                <viewController id="wKi-SN-yaT" customClass="ChatListViewController" customModule="MetropolLifeiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zGX-NJ-y7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Hno-tF-bJZ">
-                                <rect key="frame" x="20" y="112" width="374" height="100"/>
+                                <rect key="frame" x="20" y="156" width="374" height="100"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBv-xy-93E">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBv-xy-93E" customClass="UIControl">
                                         <rect key="frame" x="0.0" y="0.0" width="100.5" height="100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Служба поддержки" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvR-yw-880">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Служба поддержки" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvR-yw-880">
                                                 <rect key="frame" x="2" y="48" width="93" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="93" id="t1G-w3-gMc"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -73,6 +86,7 @@
                                         <color key="backgroundColor" red="0.75294117650000003" green="0.64313725489999995" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="uvR-yw-880" firstAttribute="leading" secondItem="DBv-xy-93E" secondAttribute="leading" constant="2" id="4No-K5-CzO"/>
+                                            <constraint firstAttribute="height" constant="100" id="MIL-He-eu1"/>
                                             <constraint firstAttribute="trailing" secondItem="uvR-yw-880" secondAttribute="trailing" constant="5.5" id="iai-en-HnY"/>
                                             <constraint firstAttribute="bottom" secondItem="uvR-yw-880" secondAttribute="bottom" constant="11" id="kid-rc-K8g"/>
                                             <constraint firstAttribute="bottom" secondItem="uvR-yw-880" secondAttribute="bottom" constant="11" id="ygD-oZ-E7S"/>
@@ -84,7 +98,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рецепция" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quT-LL-ud7">
                                                 <rect key="frame" x="4" y="48" width="93" height="41"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="93" id="7bq-nL-kkz"/>
                                                     <constraint firstAttribute="height" constant="41" id="tzQ-fl-Fno"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,6 +107,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.75294117650000003" green="0.64313725489999995" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="9rE-zc-Lok"/>
                                             <constraint firstAttribute="bottom" secondItem="quT-LL-ud7" secondAttribute="bottom" constant="11" id="Xmi-Ir-9FZ"/>
                                             <constraint firstAttribute="trailing" secondItem="quT-LL-ud7" secondAttribute="trailing" constant="4" id="cpU-5X-vM0"/>
                                             <constraint firstItem="quT-LL-ud7" firstAttribute="leading" secondItem="Dnb-82-F46" secondAttribute="leading" constant="4" id="e7T-8g-Yhk"/>
@@ -102,11 +116,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltU-tN-RAb">
                                         <rect key="frame" x="273.5" y="0.0" width="100.5" height="100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Отдел рекламы" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opb-a8-AsD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отдел рекламы" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opb-a8-AsD">
                                                 <rect key="frame" x="3" y="48" width="93" height="41"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="93" id="BWr-YC-Le5"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -117,22 +128,23 @@
                                             <constraint firstAttribute="trailing" secondItem="Opb-a8-AsD" secondAttribute="trailing" constant="4.5" id="5hE-k2-h3R"/>
                                             <constraint firstAttribute="bottom" secondItem="Opb-a8-AsD" secondAttribute="bottom" constant="11" id="ae6-zm-Gu2"/>
                                             <constraint firstItem="Opb-a8-AsD" firstAttribute="leading" secondItem="ltU-tN-RAb" secondAttribute="leading" constant="3" id="det-FZ-jFn"/>
+                                            <constraint firstAttribute="height" constant="100" id="oa2-tx-osE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXj-wh-2Rm">
-                                <rect key="frame" x="14" y="246" width="386" height="90"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXj-wh-2Rm" customClass="UIControl">
+                                <rect key="frame" x="14" y="290" width="386" height="90"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tech_support" translatesAutoresizingMaskIntoConstraints="NO" id="757-tc-DRw">
-                                        <rect key="frame" x="20" y="20" width="49" height="49"/>
+                                        <rect key="frame" x="6" y="20" width="49" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="49" id="1WK-EQ-ZoC"/>
                                             <constraint firstAttribute="height" constant="49" id="K3v-IZ-Fch"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Служба поддержки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ras-a0-AFP">
-                                        <rect key="frame" x="87" y="20" width="220" height="20"/>
+                                        <rect key="frame" x="73" y="20" width="234" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -148,7 +160,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Спасибо за внимание. Уточните" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odw-4C-Ufg">
-                                        <rect key="frame" x="87" y="49.5" width="220" height="20.5"/>
+                                        <rect key="frame" x="73" y="49.5" width="234" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -158,7 +170,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="M7b-q8-H6Z" secondAttribute="trailing" constant="20" id="9bw-IP-XnD"/>
                                     <constraint firstItem="odw-4C-Ufg" firstAttribute="bottom" secondItem="757-tc-DRw" secondAttribute="bottom" constant="1" id="GsJ-8Y-R8m"/>
-                                    <constraint firstItem="757-tc-DRw" firstAttribute="leading" secondItem="NXj-wh-2Rm" secondAttribute="leading" constant="20" id="Qxm-Kh-42w"/>
+                                    <constraint firstItem="757-tc-DRw" firstAttribute="leading" secondItem="NXj-wh-2Rm" secondAttribute="leading" constant="6" id="Qxm-Kh-42w"/>
                                     <constraint firstItem="Ras-a0-AFP" firstAttribute="leading" secondItem="757-tc-DRw" secondAttribute="trailing" constant="18" id="RIj-Iq-SF7"/>
                                     <constraint firstAttribute="height" constant="90" id="Uc0-I7-5Jb"/>
                                     <constraint firstItem="odw-4C-Ufg" firstAttribute="leading" secondItem="757-tc-DRw" secondAttribute="trailing" constant="18" id="Ya6-Y5-ilx"/>
@@ -181,10 +193,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WSV-oB-YCb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Чаты" id="oku-HA-5G2"/>
+                    <connections>
+                        <outlet property="techSupport" destination="DBv-xy-93E" id="MBZ-bR-3Fa"/>
+                        <outlet property="techSupportButton" destination="NXj-wh-2Rm" id="1DZ-Yo-ROv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Tc-Zl-cK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592.75362318840587" y="1047.9910714285713"/>
+            <point key="canvasLocation" x="712" y="718"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rnk-3t-XPp">
@@ -195,17 +212,18 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="EaU-x3-Utm" kind="relationship" relationship="rootViewController" id="TtH-hZ-DIj"/>
+                        <segue destination="TWH-nT-JWd" kind="relationship" relationship="rootViewController" id="hwW-1j-i07"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyF-eQ-PEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1559" y="1152"/>
+            <point key="canvasLocation" x="-1974" y="-198"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SZG-BY-2l1">
             <objects>
                 <tabBarController id="TWH-nT-JWd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Hsq-tC-5Rm"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UJ8-PZ-cpk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -214,6 +232,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="GT9-xg-RGF" kind="relationship" relationship="viewControllers" id="v6f-Ox-JD8"/>
+                        <segue destination="gxx-Ms-Vr5" kind="relationship" relationship="viewControllers" id="MNu-7q-itJ"/>
+                        <segue destination="wKi-SN-yaT" kind="relationship" relationship="viewControllers" id="lNE-ss-1h0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dM9-16-p4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -223,20 +243,20 @@
         <!--Главная-->
         <scene sceneID="lpt-DW-qnS">
             <objects>
-                <viewController id="GT9-xg-RGF" customClass="MainViewController" customModule="MetroLifeHackV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="GT9-xg-RGF" customClass="MainViewController" customModule="MetropolLifeiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KW2-Lb-ZuP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-uw-C8X">
-                                <rect key="frame" x="18" y="67" width="378" height="56"/>
+                                <rect key="frame" x="18" y="111" width="378" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="GT9-xg-RGF" id="1uv-cX-PXc"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bT4-bb-s4r">
-                                <rect key="frame" x="0.0" y="227" width="414" height="544"/>
+                                <rect key="frame" x="0.0" y="271" width="414" height="500"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="sdr-Mx-pbb">
                                     <size key="itemSize" width="326" height="620"/>
@@ -245,8 +265,8 @@
                                     <inset key="sectionInset" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemsCollectionViewCell" id="Jql-Of-Il7" customClass="ItemsCollectionViewCell" customModule="MetroLifeHackV2" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="0.0" width="326" height="544"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemsCollectionViewCell" id="Jql-Of-Il7" customClass="ItemsCollectionViewCell" customModule="MetropolLifeiOS" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="-22" width="326" height="544"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1OT-gv-Izd">
                                             <rect key="frame" x="0.0" y="0.0" width="326" height="544"/>
@@ -293,7 +313,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yxh-xe-NoA">
-                                <rect key="frame" x="18" y="147" width="394" height="49"/>
+                                <rect key="frame" x="18" y="191" width="394" height="49"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="cg4-yX-3pn"/>
@@ -305,7 +325,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="F3L-Qr-b2G" customClass="CategoriesCollectionViewCell" customModule="MetroLifeHackV2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="F3L-Qr-b2G" customClass="CategoriesCollectionViewCell" customModule="MetropolLifeiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-0.5" width="60" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ntX-cM-n6K">
@@ -382,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSy-7D-RcY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="39"/>
+            <point key="canvasLocation" x="395.6521739130435" y="38.839285714285715"/>
         </scene>
     </scenes>
     <resources>
