@@ -39,8 +39,50 @@
 		2CD71A2C260FA79D00B2616C /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2B260FA79D00B2616C /* CategoriesCollectionViewCell.swift */; };
 		2CD71A2F260FCABC00B2616C /* OrderReception.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */; };
 		481DC186260FDBB20049968E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC185260FDBB20049968E /* ChatListViewController.swift */; };
+		481DC194260FE6050049968E /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC189260FE6050049968E /* OpenSans-SemiBold.ttf */; };
+		481DC195260FE6050049968E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18A260FE6050049968E /* OpenSans-Light.ttf */; };
+		481DC196260FE6050049968E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18B260FE6050049968E /* OpenSans-Italic.ttf */; };
+		481DC197260FE6050049968E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18C260FE6050049968E /* OpenSans-ExtraBold.ttf */; };
+		481DC198260FE6050049968E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18D260FE6050049968E /* OpenSans-LightItalic.ttf */; };
+		481DC199260FE6050049968E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18E260FE6050049968E /* OpenSans-Bold.ttf */; };
+		481DC19A260FE6050049968E /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC18F260FE6050049968E /* OpenSans-SemiBoldItalic.ttf */; };
+		481DC19B260FE6050049968E /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC190260FE6050049968E /* OpenSans-ExtraBoldItalic.ttf */; };
+		481DC19C260FE6050049968E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 481DC191260FE6050049968E /* LICENSE.txt */; };
+		481DC19D260FE6050049968E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC192260FE6050049968E /* OpenSans-Regular.ttf */; };
+		481DC19E260FE6050049968E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 481DC193260FE6050049968E /* OpenSans-BoldItalic.ttf */; };
+		481DC1A0260FECD70049968E /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC19F260FECD70049968E /* ProfileImageCell.swift */; };
+		481DC1A3260FED3F0049968E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC1A2260FED3F0049968E /* ProfileViewController.swift */; };
+		481DC1AA260FF5100049968E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481DC1A9260FF5100049968E /* NotificationCenter.framework */; };
+		481DC1AD260FF5100049968E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC1AC260FF5100049968E /* TodayViewController.swift */; };
+		481DC1B0260FF5100049968E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481DC1AE260FF5100049968E /* MainInterface.storyboard */; };
+		481DC1B4260FF5100049968E /* Metropol Control Panel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 481DC1A8260FF5100049968E /* Metropol Control Panel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		481DC1B9260FFB790049968E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD719DE260F307200B2616C /* Assets.xcassets */; };
 		789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		481DC1B2260FF5100049968E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CD719CA260F307000B2616C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481DC1A7260FF5100049968E;
+			remoteInfo = "Metropol Control Panel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		481DC1B8260FF5100049968E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				481DC1B4260FF5100049968E /* Metropol Control Panel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2CD719D2260F307000B2616C /* MetropolLifeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetropolLifeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +120,24 @@
 		2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetropolLifeiOS.entitlements; sourceTree = "<group>"; };
 		2CD71A2E260FCABC00B2616C /* OrderReception.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderReception.intentdefinition; sourceTree = "<group>"; };
 		481DC185260FDBB20049968E /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		481DC189260FE6050049968E /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		481DC18A260FE6050049968E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		481DC18B260FE6050049968E /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		481DC18C260FE6050049968E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		481DC18D260FE6050049968E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		481DC18E260FE6050049968E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		481DC18F260FE6050049968E /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		481DC190260FE6050049968E /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		481DC191260FE6050049968E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		481DC192260FE6050049968E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		481DC193260FE6050049968E /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		481DC19F260FECD70049968E /* ProfileImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
+		481DC1A2260FED3F0049968E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		481DC1A8260FF5100049968E /* Metropol Control Panel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Metropol Control Panel.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		481DC1A9260FF5100049968E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		481DC1AC260FF5100049968E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		481DC1AF260FF5100049968E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		481DC1B1260FF5100049968E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolLifeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.debug.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.release.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +151,14 @@
 				2CD71A24260F8DB700B2616C /* Intents.framework in Frameworks */,
 				2CD71A23260F8DB700B2616C /* IntentsUI.framework in Frameworks */,
 				789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481DC1A5260FF5100049968E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481DC1AA260FF5100049968E /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD719D4260F307000B2616C /* MetropolLifeiOS */,
+				481DC1AB260FF5100049968E /* Metropol Control Panel */,
 				2CD719D3260F307000B2616C /* Products */,
 				270E7FCAEFFCED3A4B1E9733 /* Pods */,
 				8210C719326A2C70AEAE9AB6 /* Frameworks */,
@@ -120,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD719D2260F307000B2616C /* MetropolLifeiOS.app */,
+				481DC1A8260FF5100049968E /* Metropol Control Panel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +197,7 @@
 		2CD719D4260F307000B2616C /* MetropolLifeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				481DC187260FE5450049968E /* Fonts */,
 				2CD71A2D260FC84500B2616C /* MetropolLifeiOS.entitlements */,
 				2CD719E9260F3F6F00B2616C /* Scenes */,
 				2CD719D5260F307000B2616C /* AppDelegate.swift */,
@@ -143,9 +214,11 @@
 		2CD719E9260F3F6F00B2616C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				481DC1A1260FED2B0049968E /* Profile */,
 				481DC184260FDBA20049968E /* ChatList */,
 				2CD71A25260FA73F00B2616C /* Main */,
 				2CD719EA260F3F7F00B2616C /* Chat */,
+				481DC19F260FECD70049968E /* ProfileImageCell.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -283,12 +356,57 @@
 			path = ChatList;
 			sourceTree = "<group>";
 		};
+		481DC187260FE5450049968E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				481DC188260FE6050049968E /* Open_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		481DC188260FE6050049968E /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				481DC189260FE6050049968E /* OpenSans-SemiBold.ttf */,
+				481DC18A260FE6050049968E /* OpenSans-Light.ttf */,
+				481DC18B260FE6050049968E /* OpenSans-Italic.ttf */,
+				481DC18C260FE6050049968E /* OpenSans-ExtraBold.ttf */,
+				481DC18D260FE6050049968E /* OpenSans-LightItalic.ttf */,
+				481DC18E260FE6050049968E /* OpenSans-Bold.ttf */,
+				481DC18F260FE6050049968E /* OpenSans-SemiBoldItalic.ttf */,
+				481DC190260FE6050049968E /* OpenSans-ExtraBoldItalic.ttf */,
+				481DC191260FE6050049968E /* LICENSE.txt */,
+				481DC192260FE6050049968E /* OpenSans-Regular.ttf */,
+				481DC193260FE6050049968E /* OpenSans-BoldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		481DC1A1260FED2B0049968E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				481DC1A2260FED3F0049968E /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		481DC1AB260FF5100049968E /* Metropol Control Panel */ = {
+			isa = PBXGroup;
+			children = (
+				481DC1AC260FF5100049968E /* TodayViewController.swift */,
+				481DC1AE260FF5100049968E /* MainInterface.storyboard */,
+				481DC1B1260FF5100049968E /* Info.plist */,
+			);
+			path = "Metropol Control Panel";
+			sourceTree = "<group>";
+		};
 		8210C719326A2C70AEAE9AB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2CD71A22260F8DB700B2616C /* Intents.framework */,
 				2CD71A21260F8DB700B2616C /* IntentsUI.framework */,
 				51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */,
+				481DC1A9260FF5100049968E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -305,15 +423,34 @@
 				2CD719CF260F307000B2616C /* Frameworks */,
 				2CD719D0260F307000B2616C /* Resources */,
 				41FFC1A997DCD0B59B744353 /* [CP] Embed Pods Frameworks */,
+				481DC1B8260FF5100049968E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				481DC1B3260FF5100049968E /* PBXTargetDependency */,
 			);
 			name = MetropolLifeiOS;
 			productName = MetropolLifeiOS;
 			productReference = 2CD719D2260F307000B2616C /* MetropolLifeiOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		481DC1A7260FF5100049968E /* Metropol Control Panel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481DC1B5260FF5100049968E /* Build configuration list for PBXNativeTarget "Metropol Control Panel" */;
+			buildPhases = (
+				481DC1A4260FF5100049968E /* Sources */,
+				481DC1A5260FF5100049968E /* Frameworks */,
+				481DC1A6260FF5100049968E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metropol Control Panel";
+			productName = "Metropol Control Panel";
+			productReference = 481DC1A8260FF5100049968E /* Metropol Control Panel.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -321,12 +458,15 @@
 		2CD719CA260F307000B2616C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Kelbinary;
 				TargetAttributes = {
 					2CD719D1260F307000B2616C = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					481DC1A7260FF5100049968E = {
+						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
@@ -344,6 +484,7 @@
 			projectRoot = "";
 			targets = (
 				2CD719D1260F307000B2616C /* MetropolLifeiOS */,
+				481DC1A7260FF5100049968E /* Metropol Control Panel */,
 			);
 		};
 /* End PBXProject section */
@@ -353,10 +494,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481DC195260FE6050049968E /* OpenSans-Light.ttf in Resources */,
 				2CD719E2260F307200B2616C /* LaunchScreen.storyboard in Resources */,
 				2CD71A1D260F4BB600B2616C /* sample4.m4a in Resources */,
+				481DC197260FE6050049968E /* OpenSans-ExtraBold.ttf in Resources */,
+				481DC194260FE6050049968E /* OpenSans-SemiBold.ttf in Resources */,
+				481DC19C260FE6050049968E /* LICENSE.txt in Resources */,
 				2CD719DF260F307200B2616C /* Assets.xcassets in Resources */,
 				2CD719DD260F307000B2616C /* Main.storyboard in Resources */,
+				481DC19B260FE6050049968E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				481DC19E260FE6050049968E /* OpenSans-BoldItalic.ttf in Resources */,
+				481DC196260FE6050049968E /* OpenSans-Italic.ttf in Resources */,
+				481DC19D260FE6050049968E /* OpenSans-Regular.ttf in Resources */,
+				481DC19A260FE6050049968E /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				481DC199260FE6050049968E /* OpenSans-Bold.ttf in Resources */,
+				481DC198260FE6050049968E /* OpenSans-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481DC1A6260FF5100049968E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481DC1B9260FFB790049968E /* Assets.xcassets in Resources */,
+				481DC1B0260FF5100049968E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +587,8 @@
 				2CD719FD260F42B100B2616C /* MessageLayoutDelegate.swift in Sources */,
 				2CD719F3260F41F300B2616C /* Configure+ChatViewController.swift in Sources */,
 				2CD719FB260F429800B2616C /* MessageDisplayDelegate.swift in Sources */,
+				481DC1A0260FECD70049968E /* ProfileImageCell.swift in Sources */,
+				481DC1A3260FED3F0049968E /* ProfileViewController.swift in Sources */,
 				2CD71A20260F60ED00B2616C /* StarscreamSocket.swift in Sources */,
 				2CD71A2A260FA79000B2616C /* ItemsCollectionViewCell.swift in Sources */,
 				2CD71A13260F441D00B2616C /* MockUser.swift in Sources */,
@@ -438,7 +601,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		481DC1A4260FF5100049968E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481DC1AD260FF5100049968E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		481DC1B3260FF5100049968E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 481DC1A7260FF5100049968E /* Metropol Control Panel */;
+			targetProxy = 481DC1B2260FF5100049968E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2CD719DB260F307000B2616C /* Main.storyboard */ = {
@@ -455,6 +634,14 @@
 				2CD719E1260F307200B2616C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		481DC1AE260FF5100049968E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				481DC1AF260FF5100049968E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -578,6 +765,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MetropolLifeiOS/MetropolLifeiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +787,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MetropolLifeiOS/MetropolLifeiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,6 +800,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bgfb.MetropolLifeiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		481DC1B6260FF5100049968E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
+				INFOPLIST_FILE = "Metropol Control Panel/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bgfb.MetropolLifeiOS.Metropol-Control-Panel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		481DC1B7260FF5100049968E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQ9U2EUQ6N;
+				INFOPLIST_FILE = "Metropol Control Panel/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bgfb.MetropolLifeiOS.Metropol-Control-Panel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -633,6 +862,15 @@
 			buildConfigurations = (
 				2CD719E7260F307200B2616C /* Debug */,
 				2CD719E8260F307200B2616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481DC1B5260FF5100049968E /* Build configuration list for PBXNativeTarget "Metropol Control Panel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481DC1B6260FF5100049968E /* Debug */,
+				481DC1B7260FF5100049968E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

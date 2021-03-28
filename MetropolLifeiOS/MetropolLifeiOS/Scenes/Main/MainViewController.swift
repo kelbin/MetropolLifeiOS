@@ -62,6 +62,17 @@ final class MainViewController: UIViewController {
     
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     func showMessage() {
         let alert = UIAlertController(title: "Заявка принята", message: "Ожидайте в течении некоторого времени", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Продолжить", style: .default, handler: nil))

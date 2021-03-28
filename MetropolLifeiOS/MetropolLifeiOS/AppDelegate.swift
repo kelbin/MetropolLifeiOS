@@ -15,12 +15,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        if let _ = userActivity?.interaction?.intent as? OrderReceptionIntent {
-
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            initialViewController.showMessage()
-        }
+        self.window?.backgroundColor = .white
         
         return true
     }

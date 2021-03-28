@@ -10,7 +10,7 @@ target 'MetropolLifeiOS' do
   pod 'SnapKit'
   pod 'Starscream'
   pod 'AdvancedPageControl'
-
+  
   # Pods for MetropolLifeiOS
 
 end
