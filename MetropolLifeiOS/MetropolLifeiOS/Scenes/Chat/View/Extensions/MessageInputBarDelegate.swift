@@ -81,7 +81,6 @@ extension ChatViewController {
                             default:
                                 break
                             }
-                            
     
                             self?.insertMessage(answer)
                         }

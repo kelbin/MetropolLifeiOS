@@ -10,6 +10,7 @@ import UIKit
 import MessageKit
 import InputBarAccessoryView
 import SnapKit
+import Alamofire
 
 final class ChatViewController: MessagesViewController, MessageCellDelegate {
     
@@ -20,6 +21,7 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
 
     lazy var messageList: [MockMessage] = []
     lazy var audioController = BasicAudioController(messageCollectionView: messagesCollectionView)
+    var messages: [MockMessage] = []
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,29 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
         
         HowdiWebsocketService.shared.delegate = self
         
-        loadFirstMessages(messages: [MockMessage(text: "Привет, я чат-бот, помогу тебе с твоими вопросами", user: MockUser(senderId: "260", displayName: "Чат-бот"), messageId: UUID().uuidString, date: Date())])
+        convertModel()
         
         self.navigationController?.navigationBar.topItem?.title = ""
+    }
+    
+    func getRequestAPICall(model: @escaping ([ListModel]) -> () )  {
+
+        let todosEndpoint: String = "http://143.198.57.44:8000/chat-room?user_id=1"
+        
+        AF.request(todosEndpoint, method: .get, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                debugPrint(response)
+                model([ListModel(text: "Прошлые сообщение"), ListModel(text: "Прошлые сообщение"), ListModel(text: "Прошлые сообщение")] )
+            }
+    }
+    
+    func convertModel() {
+        
+        getRequestAPICall { model in
+            model.forEach { modler in self.messages.append(MockMessage(text: modler.text, user: MockUser(senderId: "25", displayName: "Анастасия, администратор"), messageId: UUID().uuidString, date: Date())) }
+            self.loadFirstMessages(messages: self.messages)
+        }
+        
     }
     
 
@@ -43,10 +65,11 @@ final class ChatViewController: MessagesViewController, MessageCellDelegate {
         }
         
         let helpText = MockMessage(text: """
-           Для ввода команд используйте следующий текст:
-           1. Вызвать оператора
-           2. Проверить статус брони
-           3. Узнать даты
+           Я могу рассказать вам информации о:
+           1. Оплата
+           2. Бронирование
+           3. Акции
+           4. Вызвать оператора
            """, user: MockUser(senderId: "260", displayName: "Чат-бот"), messageId: UUID().uuidString, date: Date())
         
         insertMessage(helpText)

@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+
+struct ListModel: Codable {
+    let text: String
+}
 
 final class ChatListViewController: UIViewController {
     
@@ -25,13 +30,32 @@ final class ChatListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getRequestAPICall {
+            
+        }
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         techImageView.isUserInteractionEnabled = true
         techImageView.addGestureRecognizer(tapGestureRecognizer)
         techSupportControl.addTarget(self, action: #selector(goToChat), for: .touchUpInside)
     }
     
+    func getRequestAPICall(model: @escaping () -> () )  {
+
+        let todosEndpoint: String = "http://143.198.57.44:8000/chat-room?user_id=1"
+        
+        AF.request(todosEndpoint, method: .get, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                debugPrint(response)
+                model()
+            }
+    }
+    
     @objc func goToChat() {
+        getRequestAPICall {
+            
+        }
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
         navigationController?.pushViewController(controller, animated: true)

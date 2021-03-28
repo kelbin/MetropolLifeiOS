@@ -74,11 +74,29 @@
         <!--Места-->
         <scene sceneID="WSb-Gj-3cs">
             <objects>
-                <viewController id="gxx-Ms-Vr5" sceneMemberID="viewController">
+                <viewController id="gxx-Ms-Vr5" customClass="PlacesViewController" customModule="MetropolLifeiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5V9-nO-4DA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yp-1e-i3t">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="places" translatesAutoresizingMaskIntoConstraints="NO" id="J8s-wN-LYZ">
+                                        <rect key="frame" x="0.0" y="-16" width="414" height="741"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yQI-06-xmY" firstAttribute="bottom" secondItem="1Yp-1e-i3t" secondAttribute="bottom" id="Acp-aK-l1T"/>
+                            <constraint firstItem="1Yp-1e-i3t" firstAttribute="leading" secondItem="yQI-06-xmY" secondAttribute="leading" id="LKy-CR-bqu"/>
+                            <constraint firstItem="1Yp-1e-i3t" firstAttribute="top" secondItem="yQI-06-xmY" secondAttribute="top" id="kJC-VQ-5NA"/>
+                            <constraint firstItem="yQI-06-xmY" firstAttribute="trailing" secondItem="1Yp-1e-i3t" secondAttribute="trailing" id="lA3-0O-G92"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yQI-06-xmY"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
@@ -87,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaS-Ga-BaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="96"/>
+            <point key="canvasLocation" x="847.82608695652175" y="95.758928571428569"/>
         </scene>
         <!--Чаты-->
         <scene sceneID="F5R-fi-uPN">
@@ -463,7 +481,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RZ-Wf-9dd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="394"/>
+            <point key="canvasLocation" x="-338" y="390"/>
         </scene>
         <!--Item-->
         <scene sceneID="p4o-Y9-uzo">
@@ -493,6 +511,7 @@
         <image name="main_tab" width="24" height="24"/>
         <image name="otdel" width="100" height="100"/>
         <image name="place_tab" width="24" height="24"/>
+        <image name="places" width="559" height="1029"/>
         <image name="profile" width="533.5" height="959.5"/>
         <image name="profile_tab" width="24" height="24"/>
         <image name="reception" width="100" height="100"/>

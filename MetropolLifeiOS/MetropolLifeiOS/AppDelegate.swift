@@ -32,7 +32,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         if let _ = userActivity.interaction?.intent as? OrderReceptionIntent {
             
-            if let vc = UIApplication.getTopViewController() as? MainViewController {
+            if let vc = UIApplication.getTopViewController() as? MainViewController  {
+                vc.showMessage()
+                } else if let vc = UIApplication.getTopViewController() as? PlacesViewController {
                 vc.showMessage()
             }
         }

@@ -212,10 +212,10 @@ final internal class SampleData {
             case .text(let text):
                 if text == "Вызвать оператора" || text == "Вызвать оператора".lowercased() {
                     return MockMessage(text: "Вызываю оператора...", user: child, messageId: UUID().uuidString, date: Date())
-                } else if text == "Проверить статус бронирования" || text == "Проверить статус бронирования".lowercased() {
-                     return MockMessage(text: "Статус бронирования - успешно забронирован", user: child, messageId: UUID().uuidString, date: Date())
-                } else if text == "Узнать дату бронирования" || text == "Узнать дату бронирования".lowercased()  {
-                     return MockMessage(text: "Дата бронирования - 12.03.2021", user: child, messageId: UUID().uuidString, date: Date())
+                } else if text == "Оплата" || text == "Оплата".lowercased() {
+                     return MockMessage(text: "Мы принимаем к оплате карты Visa, Mastercard", user: child, messageId: UUID().uuidString, date: Date())
+                } else if text == "Акции" || text == "Акции".lowercased()  {
+                     return MockMessage(text: "Действующие акции: Романтические выходные на двоих, Семейные каникулы в отеле", user: child, messageId: UUID().uuidString, date: Date())
                 } else {
                     return MockMessage(text: "Неизвестная команда. Повторите еще раз запрос", user: child, messageId: UUID().uuidString, date: Date())
                 }

@@ -57,6 +57,7 @@
 		481DC1B0260FF5100049968E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481DC1AE260FF5100049968E /* MainInterface.storyboard */; };
 		481DC1B4260FF5100049968E /* Metropol Control Panel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 481DC1A8260FF5100049968E /* Metropol Control Panel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		481DC1B9260FFB790049968E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD719DE260F307200B2616C /* Assets.xcassets */; };
+		481DC1BC26105D510049968E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC1BB26105D510049968E /* PlacesViewController.swift */; };
 		789195DADA18F56CA7DE9021 /* Pods_MetropolLifeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +139,7 @@
 		481DC1AC260FF5100049968E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		481DC1AF260FF5100049968E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		481DC1B1260FF5100049968E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481DC1BB26105D510049968E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		51ADA9B8080EAB82A32F09EF /* Pods_MetropolLifeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetropolLifeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE265A71E686BFF25849D9F /* Pods-MetropolLifeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.debug.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C934DCE8AC5CBF6D0E7E55E8 /* Pods-MetropolLifeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetropolLifeiOS.release.xcconfig"; path = "Target Support Files/Pods-MetropolLifeiOS/Pods-MetropolLifeiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		2CD719E9260F3F6F00B2616C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				481DC1BA26105D290049968E /* Places */,
 				481DC1A1260FED2B0049968E /* Profile */,
 				481DC184260FDBA20049968E /* ChatList */,
 				2CD71A25260FA73F00B2616C /* Main */,
@@ -400,6 +403,14 @@
 			path = "Metropol Control Panel";
 			sourceTree = "<group>";
 		};
+		481DC1BA26105D290049968E /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				481DC1BB26105D510049968E /* PlacesViewController.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
 		8210C719326A2C70AEAE9AB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +593,7 @@
 				2CD719F5260F421E00B2616C /* Helpers+Chat.swift in Sources */,
 				2CD71A0F260F43E100B2616C /* MockMessage.swift in Sources */,
 				2CD719F9260F426500B2616C /* MessageInputBarDelegate.swift in Sources */,
+				481DC1BC26105D510049968E /* PlacesViewController.swift in Sources */,
 				2CD71A05260F435B00B2616C /* UserItem.swift in Sources */,
 				2CD71A2F260FCABC00B2616C /* OrderReception.intentdefinition in Sources */,
 				2CD719FD260F42B100B2616C /* MessageLayoutDelegate.swift in Sources */,

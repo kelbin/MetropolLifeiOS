@@ -28,17 +28,18 @@ final class MainViewController: UIViewController {
     @IBOutlet weak var itemsCollectionView: UICollectionView!
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
+    let button = INUIAddVoiceShortcutButton(style: .whiteOutline)
+    
     var categoriesArray: [MainCategoriesModel] = [MainCategoriesModel(text: "Номера", isSelected: true),
                                                   MainCategoriesModel(text: "Услуги", isSelected: false),
                                                   MainCategoriesModel(text: "Кухня", isSelected: false),
-                                                  MainCategoriesModel(text: "Жопа", isSelected: false),
-                                                  MainCategoriesModel(text: "Роар", isSelected: false),
-                                                     MainCategoriesModel(text: "Номера", isSelected: false),
-                                                     MainCategoriesModel(text: "Номера", isSelected: false)]
+                                                  MainCategoriesModel(text: "Свадьба", isSelected: false),
+                                                  MainCategoriesModel(text: "Залы", isSelected: false),
+                                                     MainCategoriesModel(text: "Предложения", isSelected: false)]
     
     var itemsArray: [MainItemsModel] = [MainItemsModel(backImage: #imageLiteral(resourceName: "backImage"), title: "Люкс Делюкс"),
-                                        MainItemsModel(backImage: #imageLiteral(resourceName: "backImage"), title: "Люкс Жопукс"),
-                                        MainItemsModel(backImage: #imageLiteral(resourceName: "backImage"), title: "Люкс Пездюкс")]
+                                        MainItemsModel(backImage: #imageLiteral(resourceName: "backImage"), title: "Представительский номер"),
+                                        MainItemsModel(backImage: #imageLiteral(resourceName: "backImage"), title: "Гранд Супериор")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +47,24 @@ final class MainViewController: UIViewController {
         pageControl.drawer = ExtendedDotDrawer(numberOfPages: itemsArray.count, height: 6, width: 6, space: 6, raduis: 20, indicatorColor: #colorLiteral(red: 0.8549019608, green: 0.8549019608, blue: 0.8549019608, alpha: 1), dotsColor: #colorLiteral(red: 0.8549019608, green: 0.8549019608, blue: 0.8549019608, alpha: 1))
         pageControl.numberOfPages = itemsArray.count
         addSiriButton(to: self.view)
+        
+        self.becomeFirstResponder()
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            button.isHidden = false
+        }
     }
     
     func addSiriButton(to view: UIView) {
     if #available(iOS 12.0, *) {
-        let button = INUIAddVoiceShortcutButton(style: .whiteOutline)
             button.isHidden = true
             button.shortcut = INShortcut(intent: intent)
             button.delegate = self
